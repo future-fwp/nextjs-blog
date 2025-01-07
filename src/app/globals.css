@@ -1,0 +1,65 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+	--background: #ffffff;
+	--foreground: #171717;
+}
+
+@media (prefers-color-scheme: dark) {
+	:root {
+		--background: #0a0a0a;
+		--foreground: #ededed;
+	}
+}
+
+body {
+	@apply select-none;
+}
+
+span {
+	@apply !text-white;
+}
+body {
+	color: var(--foreground);
+	background: var(--background);
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+h1,
+h2 {
+	@apply text-transparent inline-block bg-clip-text bg-gradient-to-r from-white to-gray-500;
+}
+
+h1 {
+	@apply text-4xl font-bold;
+}
+
+h2 {
+	@apply text-2xl font-medium;
+}
+
+/* Specific styles for <p> elements */
+p {
+	@apply text-transparent inline-block bg-clip-text bg-gradient-to-r from-white to-gray-400;
+}
+p {
+	@apply text-[1rem] font-medium;
+}
+
+h2 {
+	@apply text-xl font-semibold;
+}
+
+h4 {
+	@apply text-[1.125rem] py-2 inline-block font-medium;
+}
+
+h1 {
+	@apply text-2xl font-bold;
+}
+
+li {
+	@apply list-disc leading-8;
+}
