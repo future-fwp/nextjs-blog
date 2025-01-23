@@ -1,8 +1,9 @@
 "use client";
 import { useEffect, useState } from "react";
-import { features } from "@/utils/data";
+// import { features } from "@/utils/data";
 import Link from "next/link";
 import type { BlogPost } from "@/types/Blog";
+import Image from 'next/image'; 
 
 function useDebounce(value: string, delay: number) {
 	const [debouncedValue, setDebouncedValue] = useState(value);
@@ -18,7 +19,7 @@ function useDebounce(value: string, delay: number) {
 	return debouncedValue;
 }
 
-export default () => {
+export default function Blogpage() {
 	const [searchTerm, setSearchTerm] = useState("");
 	const [allBlogs, setAllBlogs] = useState<BlogPost[]>([]); // Store all blogs
 	const [filteredBlogs, setFilteredBlogs] = useState<BlogPost[]>([]); // Store filtered blogs
@@ -140,7 +141,7 @@ export default () => {
 									className="w-full mx-auto group sm:max-w-sm"
 								>
 									<Link href={`/blog/${blog.id}`}>
-										<img
+										<Image
 											src={blog.images?.[0]?.url || "/api/placeholder/400/300"}
 											loading="lazy"
 											alt={blog.title}

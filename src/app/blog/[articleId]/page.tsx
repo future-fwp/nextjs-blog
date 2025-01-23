@@ -1,8 +1,10 @@
 "use client";
 import React, { useEffect, useState } from "react";
-import ReactMarkdown from "react-markdown";
+// import ReactMarkdown from "react-markdown";
 import { useParams } from "next/navigation";
 import Comment from "@/components/Comment";
+import Image from 'next/image'; 
+
 interface BlogPost {
 	id: string | number;
 	author: {
@@ -20,7 +22,7 @@ const BlogPost = () => {
 	const { articleId } = useParams();
 
 	const [post, setPost] = useState<BlogPost | null>(null);
-	const [relatedPosts, setRelatedPosts] = useState([]);
+	const [relatedPosts, setRelatedPosts] = useState<BlogPost[]>([]);
 	const [loading, setLoading] = useState(true);
 	const [error, setError] = useState(null);
 
@@ -88,7 +90,7 @@ const BlogPost = () => {
 								<header className="mb-4 lg:mb-6 not-format">
 									<address className="flex mb-6 not-italic">
 										<div className="p-8 flex flex-col gap-8 w-full items-center text-sm text-gray-900 dark:text-white">
-											<img
+											<Image
 												className="mr-4 w-16 h-16 rounded-full"
 												src={post.author?.image?.url || "/api/placeholder/64/64"}
 												alt={post.author?.displayName}
