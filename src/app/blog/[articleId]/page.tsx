@@ -100,7 +100,10 @@ const BlogPost = () => {
 										<div className="p-8 flex flex-col gap-8 w-full items-center text-sm text-gray-900 dark:text-white">
 											<Image
 												className="mr-4 w-16 h-16 rounded-full"
-												src={post.author?.image?.url || "/api/placeholder/64/64"}
+												src={
+													post.author?.image?.url ||
+													"https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?ixlib=rb-1.2.1&auto=format&fit=crop&w=64&h=64"
+												}
 												alt={post.author?.displayName}
 											/>
 											<div className="flex flex-col">
