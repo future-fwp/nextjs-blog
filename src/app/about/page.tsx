@@ -25,8 +25,8 @@ Here are some of the projects I’ve worked on:
 ### 1. **Food Recipe Website**
 - **Description**: A platform for sharing and discovering delicious recipes from around the world.
 - **Tech Stack**: React, Node.js, MongoDB
-- **GitHub**: [Food Recipe GitHub Repo](https://github.com/yourusername/food-recipe)
-- **Live Website**: [Food Recipe Live Demo](https://food-recipe-demo.com)
+- **GitHub**: [Food Recipe GitHub Repo](https://github.com/future-fwp/food-recipe.git)
+- **Live Website**: [Food Recipe Live Demo](https://food-recipe-b3dd6e.netlify.app/)
 
 ### 2. **Travel Website**
 - **Description**: A travel guide website that helps users plan their trips and explore new destinations.
@@ -51,6 +51,12 @@ Here are some of the projects I’ve worked on:
 - **Tech Stack**: HTML, CSS, JavaScript
 - **GitHub**: [Landing Page GitHub Repo](https://github.com/yourusername/landing-page)
 - **Live Website**: [Landing Page Live Demo](https://landing-page-demo.com)
+
+### 6. **YouTube Clone**
+- **Description**: A clone of YouTube's homepage with video playback functionality and a responsive design.
+- **Tech Stack**: React, Tailwind CSS, YouTube API
+- **GitHub**: [YouTube Clone GitHub Repo](https://github.com/yourusername/youtube-clone)
+- **Live Website**: [YouTube Clone Live Demo](https://youtube-clone-demo.com)
 
 ---
 
@@ -88,7 +94,7 @@ const page = () => {
 			<Suspense fallback={<div className="text-center text-xl">Loading...</div>}>
 				<ReactMarkdown
 					rehypePlugins={[rehypeRaw]}
-					className="prose prose-lg prose-headings:text-blue-600 prose-a:text-blue-500 hover:prose-a:text-blue-700 prose-strong:text-gray-800 prose-ul:list-disc prose-ol:list-decimal prose-li:my-1"
+					className="prose prose-lg prose-li:text-gray-200 prose-headings:text-cyan-600 prose-p:!text-xl prose-a:text-cyan-500 hover:prose-a:text-cyan-300 prose-strong:text-white prose-ul:list-disc prose-ol:list-decimal prose-li:my-1"
 				>
 					{markdownText}
 				</ReactMarkdown>
