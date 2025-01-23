@@ -56,7 +56,7 @@ const BlogPost = () => {
 				console.log(post, "post data");
 
 				setRelatedPosts(filtered);
-			} catch (err: any) {
+			} catch (err) {
 				setError(err.message);
 			} finally {
 				setLoading(false);

@@ -12,6 +12,9 @@ type CommentType = {
 		};
 	};
 };
+
+import Image from 'next/image'; 
+
 const Comment = () => {
 	const { articleId } = useParams();
 
@@ -57,7 +60,7 @@ const Comment = () => {
 						<footer className="flex justify-between items-center mb-2">
 							<div className="flex items-center">
 								<p className="inline-flex items-center mr-3 font-semibold text-sm text-gray-900 dark:text-white">
-									<img
+									<Image
 										className="mr-2 w-6 h-6 rounded-full"
 										src={comment.author.image?.url || "https://via.placeholder.com/40"}
 										alt={comment.author.displayName}

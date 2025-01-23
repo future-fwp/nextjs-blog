@@ -3,7 +3,7 @@ import React from "react";
 import { useState, useEffect } from "react";
 import Link from "next/link";
 import { navigation } from "@/utils/data";
-const Navbar = () => {
+export default function Navbar() {
 	const [state, setState] = useState(false);
 
 	// Replace  paths with your paths
@@ -23,7 +23,7 @@ const Navbar = () => {
 		return () => {
 			document.removeEventListener("click", handleClick); // Cleanup
 		};
-	}, []);
+	});
 	return (
 		<nav
 			className={`bg-black text-white pb-5 md:text-sm ${
@@ -118,4 +118,3 @@ const Navbar = () => {
 	);
 };
 
-export default Navbar;

@@ -2,6 +2,9 @@
 
 import Link from "next/link";
 
+import Image from 'next/image'; 
+
+
 interface CardRelatedArticleProps {
 	post: {
 		id: string;
@@ -21,7 +24,7 @@ const CardRelatedArticle = ({ post }: CardRelatedArticleProps) => {
 	return (
 		<article className="max-w-xs mb-8">
 			<Link href={`/blog/${post.id}`}>
-				<img
+				<Image
 					src={post.images?.[0]?.url || "/api/placeholder/382/240"}
 					className="mb-5 rounded-lg"
 					alt={post.title}

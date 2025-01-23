@@ -48,7 +48,7 @@ export default function Blogpage() {
 					return;
 				}
 
-				const transformedBlogs = data.items.map((item: any) => ({
+				const transformedBlogs = data.items.map((item) => ({
 					id: item.id,
 					blog: { id: item.blog.id },
 					title: item.title,
