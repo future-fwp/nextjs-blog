@@ -1,9 +1,8 @@
 "use client";
 import React from "react";
-import { useState, useEffect } from "react";
+import { useState } from "react";
 import Link from "next/link";
 import { navigation } from "@/utils/data";
-
 
 export default function Navbar() {
 	const [state, setState] = useState(false);
@@ -118,5 +117,4 @@ export default function Navbar() {
 			</div>
 		</nav>
 	);
-};
-
+}
