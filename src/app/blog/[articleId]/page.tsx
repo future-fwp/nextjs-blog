@@ -3,7 +3,7 @@ import React, { useEffect, useState } from "react";
 // import ReactMarkdown from "react-markdown";
 import { useParams } from "next/navigation";
 import Comment from "@/components/Comment";
-import Image from 'next/image'; 
+import Image from "next/image";
 
 interface BlogPost {
 	id: string | number;
@@ -56,7 +56,7 @@ const BlogPost = () => {
 				console.log(post, "post data");
 
 				setRelatedPosts(filtered);
-			} catch (err) {
+			} catch (err: any) {
 				setError(err.message);
 			} finally {
 				setLoading(false);
@@ -160,26 +160,24 @@ const BlogPost = () => {
 						<div className="px-4 mx-auto max-w-screen-xl">
 							<h2 className="mb-8 text-2xl font-bold text-gray-900 dark:text-white">Related articles</h2>
 							<div className="flex justify-center flex-wrap gap-8 lg:block">
-								{relatedPosts.map(
-									(relatedPost: { id: string; title: string; published: string; content: string }) => (
-										<div
-											key={relatedPost.id}
-											className="p-4 max-w-xs bg-white rounded-lg border border-gray-200 shadow-md dark:bg-gray-800 dark:border-gray-700 mb-4"
-										>
-											<a href={`/blog/${relatedPost.id}`}>
-												<h3 className="mb-2 text-xl font-bold tracking-tight text-gray-900 dark:text-white">
-													{relatedPost.title}
-												</h3>
-												<p className="mb-3 font-normal text-gray-700 dark:text-gray-400">
-													{relatedPost.content.replace(/<[^>]+>/g, "").slice(0, 100)}...
-												</p>
-												<div className="text-sm text-gray-500">
-													{new Date(relatedPost.published).toLocaleDateString()}
-												</div>
-											</a>
-										</div>
-									)
-								)}
+								{relatedPosts.map((relatedPost: BlogPost) => (
+									<div
+										key={relatedPost.id}
+										className="p-4 max-w-xs bg-white rounded-lg border border-gray-200 shadow-md dark:bg-gray-800 dark:border-gray-700 mb-4"
+									>
+										<a href={`/blog/${relatedPost.id}`}>
+											<h3 className="mb-2 text-xl font-bold tracking-tight text-gray-900 dark:text-white">
+												{relatedPost.title}
+											</h3>
+											<p className="mb-3 font-normal text-gray-700 dark:text-gray-400">
+												{relatedPost.content.replace(/<[^>]+>/g, "").slice(0, 100)}...
+											</p>
+											<div className="text-sm text-gray-500">
+												{new Date(relatedPost.published).toLocaleDateString()}
+											</div>
+										</a>
+									</div>
+								))}
 							</div>
 						</div>
 					</aside>

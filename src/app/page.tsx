@@ -1,9 +1,9 @@
 "use client";
-import {  useState } from "react";
+import { useState, useEffect } from "react";
 // import { features } from "@/utils/data";
 import Link from "next/link";
 import type { BlogPost } from "@/types/Blog";
-import Image from 'next/image'; 
+import Image from "next/image";
 
 function useDebounce(value: string, delay: number) {
 	const [debouncedValue, setDebouncedValue] = useState(value);
@@ -48,7 +48,7 @@ export default function Blogpage() {
 					return;
 				}
 
-				const transformedBlogs = data.items.map((item) => ({
+				const transformedBlogs = data.items.map((item: BlogPost) => ({
 					id: item.id,
 					blog: { id: item.blog.id },
 					title: item.title,
@@ -167,4 +167,4 @@ export default function Blogpage() {
 			</section>
 		</>
 	);
-};
+}
