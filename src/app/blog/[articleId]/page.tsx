@@ -1,4 +1,5 @@
 "use client";
+
 import React, { useEffect, useState } from "react";
 // import ReactMarkdown from "react-markdown";
 import { useParams } from "next/navigation";
@@ -18,6 +19,8 @@ interface BlogPost {
 	images: { url: string }[];
 }
 
+const apiKey = process.env.NEXT_PUBLIC_GOOGLE_API_KEY;
+
 const BlogPost = () => {
 	const { articleId } = useParams();
 
@@ -25,8 +28,6 @@ const BlogPost = () => {
 	const [relatedPosts, setRelatedPosts] = useState<BlogPost[]>([]);
 	const [loading, setLoading] = useState(true);
 	const [error, setError] = useState<string | null>(null);
-
-	const apiKey = process.env.NEXT_PUBLIC_GOOGLE_API_KEY;
 
 	useEffect(() => {
 		const fetchBlogPost = async () => {
@@ -45,15 +46,15 @@ const BlogPost = () => {
 				}
 
 				const postData = await postRes.json();
-				console.log(postData, "data posted");
+				// console.log(postData, "data posted");
 				const allPosts = await allPostsRes.json();
-				console.log(allPosts, "allPosts");
+				// console.log(allPosts, "allPosts");
 
 				// Filter out current post and get 4 related posts
 				const filtered = allPosts.items.filter((item: BlogPost) => item.id !== articleId).slice(0, 4);
 
 				setPost(postData);
-				console.log(post, "post data");
+				// console.log(post, "post data");
 
 				setRelatedPosts(filtered);
 				setRelatedPosts(filtered);
@@ -73,7 +74,7 @@ const BlogPost = () => {
 		if (articleId) {
 			fetchBlogPost();
 		}
-	}, [articleId, apiKey, post]);
+	}, [articleId, apiKey]);
 
 	if (loading) {
 		return <div className="flex justify-center items-center h-screen">Loading...</div>;

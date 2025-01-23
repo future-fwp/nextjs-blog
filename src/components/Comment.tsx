@@ -13,14 +13,14 @@ type CommentType = {
 	};
 };
 
-import Image from 'next/image'; 
+import Image from "next/image";
 
 const Comment = () => {
 	const { articleId } = useParams();
 
 	const apiKey = process.env.NEXT_PUBLIC_GOOGLE_API_KEY;
 
-	console.log(apiKey, "apiKey");
+	// console.log(apiKey, "apiKey");
 
 	const [comments, setComments] = useState([]);
 
@@ -37,7 +37,7 @@ const Comment = () => {
 
 				const data = await res.json();
 				setComments(data.items || []); // Use `items` if it exists, otherwise set an empty array
-				console.log(comments);
+				// console.log(comments);
 			} catch (err) {
 				console.error("Error fetching comments:", err);
 			}

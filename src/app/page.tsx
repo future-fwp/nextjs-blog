@@ -39,10 +39,10 @@ export default function Blogpage() {
 				if (!res.ok) throw new Error("Failed to fetch blogs");
 
 				const data = await res.json();
-				console.log("Raw API response:", data); // Debug log
+				// // console.log("Raw API response:", data); // Debug log
 
 				if (!data.items) {
-					console.log("No items in response");
+					// console.log("No items in response");
 					setAllBlogs([]);
 					setFilteredBlogs([]);
 					return;
