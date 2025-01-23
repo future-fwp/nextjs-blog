@@ -24,7 +24,7 @@ const BlogPost = () => {
 	const [post, setPost] = useState<BlogPost | null>(null);
 	const [relatedPosts, setRelatedPosts] = useState<BlogPost[]>([]);
 	const [loading, setLoading] = useState(true);
-	const [error, setError] = useState(null);
+	const [error, setError] = useState<string | null>(null);
 
 	const apiKey = process.env.NEXT_PUBLIC_GOOGLE_API_KEY;
 
@@ -56,8 +56,15 @@ const BlogPost = () => {
 				console.log(post, "post data");
 
 				setRelatedPosts(filtered);
-			} catch (err: any) {
-				setError(err.message);
+				setRelatedPosts(filtered);
+			} catch (err) {
+				// Type guard to ensure the error is an instance of Error
+				if (err instanceof Error) {
+					setError(err.message);
+				} else {
+					// Handle cases where the error is not an instance of Error
+					setError("An unexpected error occurred");
+				}
 			} finally {
 				setLoading(false);
 			}
