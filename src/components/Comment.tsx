@@ -46,7 +46,7 @@ const Comment = () => {
 		if (articleId) {
 			fetchComments();
 		}
-	}, [articleId, apiKey]);
+	}, [comments]);
 
 	return (
 		<section>

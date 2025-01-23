@@ -3,27 +3,29 @@ import React from "react";
 import { useState, useEffect } from "react";
 import Link from "next/link";
 import { navigation } from "@/utils/data";
+
+
 export default function Navbar() {
 	const [state, setState] = useState(false);
 
 	// Replace  paths with your paths
 
-	useEffect(() => {
-		const handleClick = (e: MouseEvent) => {
-			const target = e.target as HTMLElement | null;
-			const checkbox = document.querySelector<HTMLInputElement>("#menu-toggle");
-			``;
-			if (checkbox && !target?.closest(".menu-btn") && !target?.closest(".menu")) {
-				checkbox.checked = false; // Close the menu
-			}
-		};
+	// useEffect(() => {
+	// 	const handleClick = (e: MouseEvent) => {
+	// 		const target = e.target as HTMLElement | null;
+	// 		const checkbox = document.querySelector<HTMLInputElement>("#menu-toggle");
+	// 		``;
+	// 		if (checkbox && !target?.closest(".menu-btn") && !target?.closest(".menu")) {
+	// 			checkbox.checked = false; // Close the menu
+	// 		}
+	// 	};
 
-		document.addEventListener("click", handleClick);
+	// 	document.addEventListener("click", handleClick);
 
-		return () => {
-			document.removeEventListener("click", handleClick); // Cleanup
-		};
-	});
+	// 	return () => {
+	// 		document.removeEventListener("click", handleClick); // Cleanup
+	// 	};
+	// }, []);
 	return (
 		<nav
 			className={`bg-black text-white pb-5 md:text-sm ${

@@ -68,7 +68,7 @@ export default function Blogpage() {
 		};
 
 		fetchBlogs();
-	}, []); // Only run on mount
+	}, [apiKey]); // Only run on mount
 
 	// Second useEffect to handle search filtering
 	useEffect(() => {
