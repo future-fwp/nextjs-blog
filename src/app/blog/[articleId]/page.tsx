@@ -66,7 +66,7 @@ const BlogPost = () => {
 		if (articleId) {
 			fetchBlogPost();
 		}
-	}, [articleId, post]);
+	}, [articleId, apiKey, post]);
 
 	if (loading) {
 		return <div className="flex justify-center items-center h-screen">Loading...</div>;

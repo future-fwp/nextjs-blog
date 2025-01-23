@@ -1,5 +1,5 @@
 "use client";
-import { useEffect, useState } from "react";
+import {  useState } from "react";
 // import { features } from "@/utils/data";
 import Link from "next/link";
 import type { BlogPost } from "@/types/Blog";
