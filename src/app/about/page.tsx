@@ -37,8 +37,8 @@ Here are some of the projects I’ve worked on:
 ### 3. **Portfolio Website**
 - **Description**: A personal portfolio showcasing my projects, skills, and achievements.
 - **Tech Stack**: React, Tailwind CSS
-- **GitHub**: [Portfolio GitHub Repo](https://github.com/yourusername/portfolio)
-- **Live Website**: [Portfolio Live Demo](https://yourportfolio.com)
+- **GitHub**: [Portfolio GitHub Repo](https://github.com/future-fwp/portfolio-frontend-website.git)
+- **Live Website**: [Portfolio Live Demo](https://portfolio-website-3ed99f.netlify.app/)
 
 ### 4. **Quiz App**
 - **Description**: An interactive quiz application with multiple categories and scoring system.
@@ -49,14 +49,14 @@ Here are some of the projects I’ve worked on:
 ### 5. **Landing Page**
 - **Description**: A responsive landing page for a fictional product or service.
 - **Tech Stack**: HTML, CSS, JavaScript
-- **GitHub**: [Landing Page GitHub Repo](https://github.com/yourusername/landing-page)
-- **Live Website**: [Landing Page Live Demo](https://landing-page-demo.com)
+- **GitHub**: [Landing Page GitHub Repo](https://github.com/future-fwp/landing-page.git)
+- **Live Website**: [Landing Page Live Demo](https://landing-page-a8f4d6.netlify.app/)
 
 ### 6. **YouTube Clone**
 - **Description**: A clone of YouTube's homepage with video playback functionality and a responsive design.
 - **Tech Stack**: React, Tailwind CSS, YouTube API
-- **GitHub**: [YouTube Clone GitHub Repo](https://github.com/yourusername/youtube-clone)
-- **Live Website**: [YouTube Clone Live Demo](https://youtube-clone-demo.com)
+- **GitHub**: [YouTube Clone GitHub Repo](https://github.com/future-fwp/youtube-clone-project)
+- **Live Website**: [YouTube Clone Live Demo](https://youtubeclonefuturefwp.netlify.app)
 
 ---
 
@@ -83,9 +83,9 @@ I’m particularly passionate about:
 
 I’m always excited to collaborate on projects, share ideas, or discuss how we can create something amazing together. Feel free to reach out!
 
-- **Email**: [Your Email]
-- **LinkedIn**: [Your LinkedIn Profile](https://linkedin.com/in/yourusername)
-- **GitHub**: [GitHub Profile](https://github.com/yourusername)
+- **Email**: 6532161321@student.chula.ac.th
+- **LinkedIn**: [Witsanuporn LinkedIn profile](https://www.linkedin.com/in/witsanuporn-promsirinimit-71654a331/)
+- **GitHub**: [Witsanuporn Github profile](https://github.com/future-html)
 `;
 
 const page = () => {
