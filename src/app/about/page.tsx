@@ -31,8 +31,8 @@ Here are some of the projects I’ve worked on:
 ### 2. **Travel Website**
 - **Description**: A travel guide website that helps users plan their trips and explore new destinations.
 - **Tech Stack**: HTML, CSS, JavaScript, Bootstrap
-- **GitHub**: [Travel Website GitHub Repo](https://github.com/yourusername/travel-website)
-- **Live Website**: [Travel Website Live Demo](https://travel-website-demo.com)
+- **GitHub**: [Travel Website GitHub Repo](https://github.com/future-fwp/travel-website?tab=readme-ov-file)
+- **Live Website**: [Travel Website Live Demo](https://travel-website-a3bfc0.netlify.app/)
 
 ### 3. **Portfolio Website**
 - **Description**: A personal portfolio showcasing my projects, skills, and achievements.
@@ -43,8 +43,8 @@ Here are some of the projects I’ve worked on:
 ### 4. **Quiz App**
 - **Description**: An interactive quiz application with multiple categories and scoring system.
 - **Tech Stack**: React, TypeScript, Firebase
-- **GitHub**: [Quiz App GitHub Repo](https://github.com/yourusername/quiz-app)
-- **Live Website**: [Quiz App Live Demo](https://quiz-app-demo.com)
+- **GitHub**: [Quiz App GitHub Repo](https://github.com/future-fwp/quiz.git)
+- **Live Website**: [Quiz App Live Demo](https://react-quiz-app-06f3a7.netlify.app/)
 
 ### 5. **Landing Page**
 - **Description**: A responsive landing page for a fictional product or service.
