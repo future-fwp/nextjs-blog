@@ -12,9 +12,9 @@ export default {
 			colors: {
 				primary: "#000000",
 				secondary: "#06b6d4",
-				text:"#FFFFFF"
+				text: "#FFFFFF",
 			},
 		},
 	},
-	plugins: [],
+	plugins: [require("@tailwindcss/typography")],
 } satisfies Config;

@@ -142,7 +142,12 @@ export default function Blogpage() {
 								>
 									<Link href={`/blog/${blog.id}`}>
 										<Image
-											src={blog.images?.[0]?.url || "/api/placeholder/400/300"}
+											src={
+												blog.images?.[0]?.url ||
+												"https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?ixlib=rb-1.2.1&auto=format&fit=crop&w=64&h=64"
+											}
+											width={64}
+											height={64}
 											loading="lazy"
 											alt={blog.title}
 											className="w-full rounded-lg"
