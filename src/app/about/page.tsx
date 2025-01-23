@@ -84,9 +84,14 @@ I’m always excited to collaborate on projects, share ideas, or discuss how we 
 
 const page = () => {
 	return (
-		<div className="max-w-[1200px] mx-auto">
-			<Suspense fallback={<div>Loading...</div>}>
-				<ReactMarkdown rehypePlugins={[rehypeRaw]}>{markdownText}</ReactMarkdown>
+		<div className="max-w-[1200px] mx-auto p-6">
+			<Suspense fallback={<div className="text-center text-xl">Loading...</div>}>
+				<ReactMarkdown
+					rehypePlugins={[rehypeRaw]}
+					className="prose prose-lg prose-headings:text-blue-600 prose-a:text-blue-500 hover:prose-a:text-blue-700 prose-strong:text-gray-800 prose-ul:list-disc prose-ol:list-decimal prose-li:my-1"
+				>
+					{markdownText}
+				</ReactMarkdown>
 			</Suspense>
 		</div>
 	);
