@@ -1,0 +1,33 @@
+List pages for nextjs blog project 
+
+- Pages 
+
+-  Home pages 
+
+Mock Data ==> array of BlogPost type export interface BlogPost {
+  id: string;
+  blog: { id: string };
+  title: string;
+  content: string;
+  published: string;
+  images?: { url: string }[];
+}
+
+Get the api key 
+
+1. Search filter  ==> input changes to {value:””} ==> filter the blog by debounce function , check the text should be in docs 
+2. Mock fetching the result correctly use jest.mock and global.fetch function
+
+- Blog Article Pages 
+
+Mock data ==> loading the article id with fetching the result 
+
+1. Loading the article 
+2. Fetching the data success 
+3. Add the data in Home page 
+
+-About pages 
+
+Use toHaveClass Attribute the link navigate correctly such as see text and those text has the attribute href etc 
+
+1. Prose the story appropiate
