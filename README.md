@@ -28,7 +28,8 @@ Welcome to the **Next.js Blog** project! This is a dynamic, responsive blog buil
 ### 5. **Testing with Jest**
 
 -  Comprehensive testing using **Jest** library.
--  Test cases for:
+-  Planning testing in file Planning_testing.txt
+-  Test cases for: 
    -  Fetch function (success, loading, and error states).
    -  Correct rendering of elements.
 
