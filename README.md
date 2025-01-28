@@ -34,12 +34,6 @@ Welcome to the **Next.js Blog** project! This is a dynamic, responsive blog buil
 
 ---
 
-## 👨‍💻 About Me
-
-Hey there! I'm [Your Name], a [Your Background, e.g., software developer, tech enthusiast, etc.]. This project is one of many I've worked on to explore modern web development technologies. Check out my other projects on [GitHub/LinkedIn/Portfolio Link].
-
----
-
 ## 🔮 Future Improvements
 
 -  **User Registration and Forms**
