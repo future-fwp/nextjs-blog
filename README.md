@@ -50,6 +50,7 @@ Welcome to the **Next.js Blog** project! This is a dynamic, responsive blog buil
 ## 🙏 Acknowledgments
 
 A big thank you to **Google API** for providing the data that powers this blog. Without their support, this project wouldn't have been possible.
+https://www.youtube.com/watch?v=EHGlor1Zvhs
 
 ---
 
